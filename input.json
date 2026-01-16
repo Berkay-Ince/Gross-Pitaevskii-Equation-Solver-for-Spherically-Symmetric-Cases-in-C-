@@ -1,0 +1,38 @@
+{
+  "methods": 
+  [
+    "TSSM"
+  ],
+
+  "g_list": 
+  [
+    0.5,5.0,100.0
+  ],
+
+  "R_list": 
+  [
+    10.0
+  ],
+
+  "dt_list_str": 
+  [
+    "0.5*dr*dr","1*dr*dr"
+  ],
+  "dt_list_num": 
+  [
+    1e-7
+  ],
+  "numerics": 
+  {
+    "N": 4096,
+    "tol": 1e-10,
+    "max_iter": 500000,
+    "renorm_every": 100,
+    "report_every": 1e4,
+    "E_aim": 1.5
+  },
+
+  "output": {
+    "out_dir": "gpe_runs"
+  }
+}
