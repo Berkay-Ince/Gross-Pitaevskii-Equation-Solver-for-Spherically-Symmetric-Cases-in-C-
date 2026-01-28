@@ -100,21 +100,4 @@ std::vector<double> laplacian(const std::vector<double> &psi, double dr)
 
         return kinetic_term;
     } 
-
-/*inline void save_r_and_psi(const std::vector<double>& r,
-                               const std::vector<double>& psi,
-                               const std::string& filename)
-    {
-        std::ofstream file(filename);
-        if (!file.is_open()) {
-            std::cerr << "Error: Could not open " << filename << "\n";
-            return;
-        }
-
-        for (std::size_t i = 0; i < psi.size(); ++i) {
-            file << r[i] << " " << psi[i] << "\n";
-        }
-        file.close();
-    }*/
-
 }
