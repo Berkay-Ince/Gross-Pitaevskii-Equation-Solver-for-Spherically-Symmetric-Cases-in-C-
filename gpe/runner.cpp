@@ -41,6 +41,9 @@ namespace cGPE {
                 if (rel < var.tol) {
                     break;
                 }
+                if (E_curr < var.E_aim) {
+                    break;
+                }
                 E_prev = E_curr;
             }
             
