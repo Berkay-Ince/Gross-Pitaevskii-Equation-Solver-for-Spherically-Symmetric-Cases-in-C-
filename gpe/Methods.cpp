@@ -20,7 +20,7 @@ void FE_Method(std::vector<double> &psi,
         for (int i = 0; i <N; i++){
             psi[i] -= dt * (-0.5 * laplacian_psi[i] + V[i] * psi[i] + g * psi[i] *psi[i] * psi[i] / (r[i]*r[i]+ 1e-30));
         }
-        psi [0] = 0.0; // Boundary condition at r=0
+        psi [0] = 0.0; // Boundary condition at r=-R
         psi [N-1] = 0.0; // Boundary condition at r=R
     }
 
