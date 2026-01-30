@@ -12,10 +12,10 @@ namespace cGPE {
 
     GPEResult run_simulation(variables var)
     {
-        // Initialize FFTW cache for TSSP method
         int breakin_step = 0;
         //  Start Timers
         auto t_start = std::chrono::steady_clock::now();
+        // Initialize FFTW cache for TSSP method
         FFTWCache fftw_cache;
         if (var.method == "TSSM") { // TSSP method
             fftw_cache = make_cache(var.N, var.dr);
