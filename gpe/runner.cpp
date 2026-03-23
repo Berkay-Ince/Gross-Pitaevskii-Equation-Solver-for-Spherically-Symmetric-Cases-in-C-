@@ -29,7 +29,11 @@ namespace cGPE {
                 cGPE::CN_Step(var.psi, var.V, var.r, var.dr, var.dt, var.g);
             } else if (var.method == "TSSM") {
                 cGPE::TSSM_Step(var.psi, var.V, var.r, var.dr, var.dt, var.g, fftw_cache);
-            } else {
+            } 
+            else if (var.method == "RK4") {
+                cGPE::RK4_Step(var.psi, var.V, var.r, var.dr, var.dt, var.g);
+            }
+            else {
                 throw std::runtime_error("Unknown method selected.");
             }
             if(step % var.renorm_every == 0) {
