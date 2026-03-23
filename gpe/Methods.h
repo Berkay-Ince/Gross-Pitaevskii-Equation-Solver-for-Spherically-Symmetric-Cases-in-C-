@@ -19,5 +19,9 @@ void CN_Step(std::vector<double> &psi,
                     const std::vector<double> &V,
                     const std::vector<double> &r,
                     double dr, double dt, double g);
-                    
+
+void RK4_Step(std::vector<double> &psi,
+                    const std::vector<double> &V,
+                    const std::vector<double> &r,
+                    double dr, double dt, double g);       
 }
